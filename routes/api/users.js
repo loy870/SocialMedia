@@ -112,7 +112,8 @@ router.post('/login', (req, res) => {
                     }
                 })
         })
-})
+        .catch(err => res.status(404).json(err));
+});
 
 //@desc retunr current user
 
