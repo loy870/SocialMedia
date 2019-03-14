@@ -12,7 +12,7 @@ module.exports = function validateExperienceInput(data){
     if(Validator.isEmpty(data.title)){
         errors.title = 'title is required';
     }
-    if(!Validator.isEmail(data.company)){
+    if(Validator.isEmpty(data.company)){
         errors.company = 'company is invalid';
     }
     if(Validator.isEmpty(data.from)){
