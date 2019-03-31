@@ -11,7 +11,7 @@
             "name": "Launch via NPM",
             "runtimeExecutable": "npm",
             "runtimeArgs": [
-                "run dev"
+                "npm start --prefix client"
                 
             ],
         },
